@@ -36,12 +36,19 @@ class MyMessageCard extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
           child: Stack(children: [
             Padding(
-              padding: const EdgeInsets.only(
-                left: 30,
-                right: 30,
-                top: 5,
-                bottom: 20,
-              ),
+              padding: type == MessageEnum.TEXT
+                  ? const EdgeInsets.only(
+                      left: 30,
+                      right: 30,
+                      top: 5,
+                      bottom: 20,
+                    )
+                  : const EdgeInsets.only(
+                      left: 5,
+                      top: 5,
+                      right: 5,
+                      bottom: 25,
+                    ),
               child: DisplayTextImageGIF(
                 message: message,
                 type: type,
