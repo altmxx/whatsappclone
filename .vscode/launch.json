@@ -1,11 +1,24 @@
 {
     "configurations": [
         {
-            "name": "Flutter (Pixel 4 API 30)",
+            "name": "Pixel 4",
             "program": "lib/main.dart",
             "deviceId": "emulator-5554",
             "request": "launch",
             "type": "dart"
+        },
+        {
+            "name": "MT2111",
+            "program": "lib/main.dart",
+            "deviceId": "a59d6e9e",
+            "request": "launch",
+            "type": "dart"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": ["Pixel 4","MT2111"]
         }
     ]
 }
